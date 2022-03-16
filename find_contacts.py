@@ -19,6 +19,7 @@ find a
 
 #!/bin/python3
 
+from itertools import count
 import math
 import os
 import random
@@ -34,13 +35,17 @@ import sys
 
 def contacts(queries):
     # Write your code here
+    find = [item_find[5:] for item_find in queries if "find" in item_find]
+    count_find = 0
     for i in queries:
-        if "hac" in i:
-            print(i)
-        elif "find" in i:
-            # print(i)
-            pass
+        if "add" in i:
+            for item_add in find:
+                if item_add in i:
+                    count_find += 1
+    return count_find
+
 
 if __name__ == '__main__':
     queries = ['add hack', 'add hackerrank', 'find hac', 'find hak']
     result = contacts(queries)
+    print(result)
