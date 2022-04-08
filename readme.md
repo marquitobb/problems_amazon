@@ -10,3 +10,23 @@ https://www.hackerrank.com/challenges/balanced-brackets
 https://www.hackerrank.com/challenges/contacts
 https://www.hackerrank.com/challenges/find-the-running-median
 https://www.hackerrank.com/challenges/swap-nodes-algo
+
+## ejecutar con conda
+
+1. Creamos el ambiente de conda con python 3.8
+
+´´bash
+conda create -n problems_amazon python=3.8
+´´
+
+2. Activamos el ambiente
+
+´´´
+conda activate problems_amazon
+´´´
+
+3. Instalamos las librerias necesarias
+
+´´´
+pip install -r requirements.txt
+´´´
