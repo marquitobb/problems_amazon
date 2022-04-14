@@ -15,18 +15,24 @@ https://www.hackerrank.com/challenges/swap-nodes-algo
 
 1. Creamos el ambiente de conda con python 3.8
 
-´´bash
+```bash
 conda create -n problems_amazon python=3.8
-´´
+```
 
 2. Activamos el ambiente
 
-´´´
+```bash
 conda activate problems_amazon
-´´´
+```
 
 3. Instalamos las librerias necesarias
 
-´´´
+```bash
 pip install -r requirements.txt
-´´´
+```
+
+## Execute with pytest
+
+```bash
+pytest -v -s test_problems_amazon.py
+```

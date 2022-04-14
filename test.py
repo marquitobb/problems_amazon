@@ -9,6 +9,7 @@ from unittest import TestCase
 from .find_contacts import contacts
 from .brackets import isBalanced
 from .median import runningMedian
+from .substring import Solution
 
 def test_find_contacts():
     """
@@ -33,3 +34,24 @@ def test_runningMedian():
     result = runningMedian(a)
     print(result)
     assert result == 2
+
+@pytest.mark.parametrize(
+    "substring,expected",
+    [
+        ("abcabcbb",3),
+        ("bbbbb",1),
+        ("pwwkew",3),
+        ("",0),
+        ("a",1),
+        ("au",2),
+        ("dvdf",3),
+    ]
+)
+def test_substring(substring, expected):
+    """
+    Create a test case for substring
+    """
+    s = Solution()
+    string_one = s.lengthOfLongestSubstring(substring)
+    print(substring, ": ", string_one)
+    assert int(string_one) == expected
