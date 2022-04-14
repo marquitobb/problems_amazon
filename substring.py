@@ -20,7 +20,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 from array import array
 from re import I
 
-
+# TODO: optimize more
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         string_temp = ""

@@ -34,5 +34,5 @@ pip install -r requirements.txt
 ## Execute with pytest
 
 ```bash
-pytest -v -s test_problems_amazon.py
+pytest test.py -v -s
 ```

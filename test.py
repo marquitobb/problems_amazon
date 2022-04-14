@@ -55,3 +55,12 @@ def test_substring(substring, expected):
     string_one = s.lengthOfLongestSubstring(substring)
     print(substring, ": ", string_one)
     assert int(string_one) == expected
+
+@pytest.mark.parametrize(
+    "array_one,array_two,expected",
+    [
+        ([1,2],[3,4],2.5),
+    ]
+)
+def test_median_two_array(array_one,array_two,expected):
+    assert 2.5 == 2.5
